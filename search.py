@@ -2,7 +2,8 @@ import requests
 import streamlit as st
 
 # SERVER_URL 정의 추가
-SERVER_URL = f"{st.secrets["server_ip"]}:8000" 
+SERVER_URL = f"http://{st.secrets['server_ip']}"
+
 
 # 페이지 설정을 스크립트의 가장 처음으로 이동
 st.set_page_config(page_title="축제 정보 검색", page_icon="🎉")
